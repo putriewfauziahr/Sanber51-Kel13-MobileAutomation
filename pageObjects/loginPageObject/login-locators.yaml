@@ -1,0 +1,4 @@
+ username-input:    '//*[@resource-id="com.example.myapplication:id/username"]'
+ password-input:    '//*[@resource-id="com.example.myapplication:id/password"]'
+ sign-in-button2:   '//*[@resource-id="com.example.myapplication:id/signIn"]'
+ success-login:     '//*[@resource-id="com.example.myapplication:id/textView"]'
