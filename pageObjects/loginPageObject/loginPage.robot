@@ -4,18 +4,25 @@ Variables   login-locators.yaml
 
 *** Keywords ***
 Input Username On Login Page
-    [Arguments]    ${username}
+    [Arguments]                        ${username}
     Wait Until Element Is Visible      ${username-input}
     Input Text    ${username-input}    ${username}  
 
 Input Password On Login Page
-    [Arguments]    ${password}
+    [Arguments]                        ${password}
     Wait Until Element Is Visible      ${password-input}
     Input Text    ${password-input}    ${password}
 
 Click Sign In Button On Login Page
-    Click Element    ${sign-in-button2}
+    Wait Until Element Is Visible      ${sign-in-button2}
+    Click Element                      ${sign-in-button2}
 
 Success Login
     Wait Until Element Is Visible      ${success-login}
     Element Should Contain Text        ${success-login}    	NGen Digital
+
+
+Failed Login
+    Sleep    3s
+    Page Should Contain Text    Invalid username/password
+    
