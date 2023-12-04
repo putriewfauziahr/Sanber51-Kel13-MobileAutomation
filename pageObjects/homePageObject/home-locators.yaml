@@ -1,2 +1,3 @@
 sign-in-button: '//*[@resource-id="com.example.myapplication:id/login"]'
 menu_book: '//*[@resource-id="com.example.myapplication:id/book"]'
+menu_search: '//*[@resource-id="com.example.myapplication:id/search_flight"]'
